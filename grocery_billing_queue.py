@@ -23,7 +23,7 @@ while billing:
             print("Invalid price or quantity. Please enter again.\n")
             continue
         item_total = price * quantity
-        print(f"  {item_name}: {quantity} x {price} = {item_total}")
+        print(f"{item_name}: {quantity} x {price} = {item_total}")
         customer_total += item_total
         if price < 50:
             low_price_items += quantity
@@ -37,7 +37,7 @@ while billing:
 
     print(f"\nTotal bill for {name}: {customer_total}")
     print("Billing complete!\n")
-    again = input("Next customer? (yes/no): ")
+    again = input("Are there any more customers remaining? (yes/no): ")
     if again != "yes":
         billing = False
         
